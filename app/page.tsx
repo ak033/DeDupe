@@ -14,6 +14,7 @@ export default function Home() {
       provider: 'google',
       options: {
         scopes: 'https://www.googleapis.com/auth/drive.readonly',
+        redirectTo: `${window.location.origin}/auth/callback`,
       },
     });
   }
